@@ -20,8 +20,20 @@ import {
 import { book, build, colorFill, grid } from 'ionicons/icons';
 import React from 'react';
 import './Home.css';
+import IButton from './../interfaces/iButton';
+import conf from './../config';
+
+const But: React.FC<IButton> = props => {
+  return (
+      <button className={props.class} >{props.name}</button>
+  );
+};
+
+
+
 
 const HomePage: React.FC = () => {
+
   return (
     <IonPage>
       <IonHeader>
@@ -33,6 +45,8 @@ const HomePage: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
+
+        <But name={conf.name} class={'red-text'} />
         <IonCard className="welcome-card">
           <img src="/assets/shapes.svg" alt=""/>
           <IonCardHeader>

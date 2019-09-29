@@ -30,12 +30,12 @@ import './theme/variables.css';
 
 const appPages: AppPage[] = [
   {
-    title: 'Home',
+    title: 'Главная',
     url: '/home',
     icon: home
   },
   {
-    title: 'List',
+    title: 'Перечень',
     url: '/home/list',
     icon: list
   }
